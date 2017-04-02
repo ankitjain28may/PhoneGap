@@ -29,7 +29,7 @@ body{
     background-color: white;
     border: 1px solid black;
     color: black;
-    font-size: 135px;
+    font-size: 8em;
     text-align: right;
     overflow-x:auto;
     border-radius: 2%;
@@ -56,9 +56,8 @@ body{
 }
 #clear a{
     position: relative;
-    top: calc(50% - 60px);
-    height:120px;
-    font-size: 80px;
+    top: calc(50% - 0.5em);
+    font-size: 5em;
     display: block;
     width: 100%;
 }
@@ -80,9 +79,8 @@ body{
 }
 #equal a{
     position: relative;
-    top: calc(50% - 75px);
-    /*height:120px;*/
-    font-size: 100px;
+    top: calc(50% - 0.6em);
+    font-size: 3em;
     display: block;
     width: 100%;
 }
@@ -100,8 +98,8 @@ body{
 .same a{
     display: block;
     position: relative;
-    top: calc(50% - 75px);
-    font-size: 100px;
+    top: calc(50% - 0.7em);
+    font-size: 3em;
     width: 100%;
 }
 #add{
@@ -302,7 +300,7 @@ body{
 }
 #back a{
     /*padding:25%;*/
-    font-size: 80px;
+    font-size: 3em;
 
 }
 #back:active {
@@ -349,7 +347,7 @@ body{
     color: white;
     letter-spacing: 2%;
     /*animation: spin 4s linear;*/
-    font-size: 120px;
+    font-size: 6em;
     padding-left:6%;
     padding-top: 1%;
 }
