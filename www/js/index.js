@@ -55,6 +55,8 @@ function queryDB(tx) {
     //
 function querySuccess(tx, results) {
   console.log("Returned rows = " + results.rows.length);
+  $("#name").val(results.rows.length);
+
   // this will be true since it was a select statement and so rowsAffected was 0
   if (!results.rowsAffected) {
     console.log('No rows affected!');
