@@ -49,13 +49,14 @@ function successCB() {
 function queryDB(tx) {
     $("#name").val("working");
     tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+    $("#name").val("executing");
 }
 
     // Query the success callback
     //
 function querySuccess(tx, results) {
+  $("#test").val(results.rows.length);
   console.log("Returned rows = " + results.rows.length);
-  $("#name").val(results.rows.length);
 
   // this will be true since it was a select statement and so rowsAffected was 0
   if (!results.rowsAffected) {
