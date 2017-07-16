@@ -27,12 +27,12 @@ function createSchema(tx)
 
 function errorDB()
 {
-    alert("Error to create schema");
+    alert("Error");
 }
 
 function successDB()
 {
-    alert("Schema creation successful");
+    alert("successful");
 }
 
 // Insert Records
