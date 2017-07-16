@@ -602,6 +602,14 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/cordova-sqlite-legacy-build-support/www/SQLitePlugin.js",
+        "id": "cordova-sqlite-legacy-build-support.SQLitePlugin",
+        "pluginId": "cordova-sqlite-legacy-build-support",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -627,7 +635,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.5",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-sqlite-legacy-build-support": "1.3.5"
 }
 // BOTTOM OF METADATA
 });

@@ -37,6 +37,7 @@ function successInSchema()
 
 // Insert Records
 $("#submit").click(function() {
+    console.log("Clicked");
   dbobj.transaction(insertRecord, errorDB, successDB);
   dbobj.transaction(selectRecords, errorDB, successDB);
 })
@@ -67,6 +68,7 @@ function successResults(tx,results){
   console.log(sData);
   var nLength = results.rows.length;
   console.log(nLength);
+  $("#name").val(nLength);
   // for(var c=0;c<=nLength;c++){
     // execute or place your desired statement
   // }
