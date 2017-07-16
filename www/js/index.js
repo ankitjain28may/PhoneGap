@@ -12,7 +12,7 @@ function onDeviceReady() {
     dbobj = window.openDatabase("Database", "1.0", "Database", 65536);
   //dbobj = window.openDatabase("databasename", "4", "Cordova Demo",'');
  }
-  dbobj.transaction(createSchema, errorInSchema, successInSchema);
+  dbobj.transaction(createSchema, errorDB, successDB);
 }
 
 
@@ -25,12 +25,12 @@ function createSchema(tx)
   tx.executeSql('INSERT INTO name_list (sName) VALUES ("Second row")');
 }
 
-function errorInSchema()
+function errorDB()
 {
     alert("Error to create schema");
 }
 
-function successInSchema()
+function successDB()
 {
     alert("Schema creation successful");
 }
